@@ -60,9 +60,10 @@ def generate_replies(
     style_sample: str = "",
     casual_formal: int = 3,
     short_long: int = 3,
+    api_key: str = "",
 ) -> str:
     """Call Groq API and return raw text containing 3 labeled reply blocks."""
-    key = os.getenv("GROQ_API_KEY")
+    key = api_key or os.getenv("GROQ_API_KEY")
     if not key:
         return MOCK_RESPONSE
 
