@@ -131,7 +131,7 @@ col1, col2, col3 = st.columns(3)
 with col1:
     sender = st.selectbox(
         "Who sent it?",
-        ["Friend", "Crush", "Parent", "Teacher", "Colleague", "Stranger", "Ex"],
+        ["Friend", "Crush", "Romantic Partner", "Parent", "Teacher", "Colleague", "Stranger", "Ex"],
     )
 with col2:
     relationship = st.selectbox(
@@ -141,7 +141,7 @@ with col2:
 with col3:
     goal = st.selectbox(
         "Your goal?",
-        ["Keep the peace", "Be firm", "Play it cool", "Be funny", "Be honest", "End the conversation"],
+        ["Keep the peace", "Keep the conversation steady", "Be firm", "Play it cool", "Be funny", "Be honest", "End the conversation"],
     )
 
 st.markdown("---")
